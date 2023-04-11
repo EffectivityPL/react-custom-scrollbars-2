@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "typings": "./index.d.ts",
   "scripts": {
+    "prepare": "npm run build",
     "clean": "rimraf lib dist",
     "build": "babel src --out-dir lib",
     "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/react-custom-scrollbars.js",
